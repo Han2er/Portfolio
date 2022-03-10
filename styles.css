@@ -23,6 +23,11 @@ body {
   margin-left: 20px;
   color: #444;
 }
+@media (max-width: 420px) {
+  #page-title {
+    display: none;
+  }
+}
 #navbar ul {
   width: 100%;
   display: flex;

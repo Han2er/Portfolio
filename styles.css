@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: #d22;
+  font-size: 20px;
+  z-index: 100;
+}
+#page-title {
+  margin-left: 20px;
+  color: #444;
+}
+#navbar ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+#navbar ul li {
+  margin-right: 40px;
+}
+#navbar a {
+  color: white;
+  text-decoration: none;
+}
+#navbar a:hover {
+  color: #ddd;
+}
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(40deg, #333, #111);
+}
+#welcome-section h1 {
+  font-family: "Gugi", "Righteous", cursive;
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+}
+#welcome-section p {
+  font-weight: 300;
+  font-size: 2em;
+  margin: 0;
+  color: #d22;
+}
+
+#project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(40deg, #368, #004);
+}
+#project-section h1 {
+  text-decoration: underline;
+  font-size: 2.5em;
+}
+#container {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(2, 400px);
+  grid-gap: 30px;
+  justify-content: center;
+}
+@media (max-width: 870px) {
+  #container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 400px);
+  }
+}
+.project-tile {
+  background-color: red;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.project-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-title p {
+  color: white;
+  text-decoration: none;
+}
+.project-title span {
+  visibility: hidden;
+  color: orange;
+}
+.project-tile:hover .project-title span {
+  visibility: visible;
+  transition: 0.3s;
+}
+#cont1 {
+  background: url(https://i.postimg.cc/85wcvt3K/Tribute-Page.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cont2 {
+  background: url(https://i.postimg.cc/DygVT0HT/Survay-Form.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cont3 {
+  background: url(https://i.postimg.cc/FzRRV0X9/Technical-Documentation.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cont4 {
+  background: url(https://i.postimg.cc/PqWPXtMk/Product-Landing-Page.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#more a {
+  display: inline-block;
+  margin: 40px;
+  padding: 10px 30px;
+  color: white;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#more a:hover {
+  background-color: #d22;
+  transition: 0.5s;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+}
+footer h1 {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+footer p {
+  margin: 0;
+  font-weight: 300;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: 100%;
+}
+.icons a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
+  margin: 10px;
+  transition: 0.5s;
+}
+.icons a:hover {
+  transform: translateY(5px);
+  color: #eee;
+}
